@@ -1,6 +1,7 @@
 // non-primitive datatype will copy reference not value
 //it will affect original array
 //obj
+//shallow copy-it will copy only one level
 // const originalObj={name:"Alice",age:25};
 // const copyObj=originalObj; //reference
 // copyObj.age=30;
@@ -53,6 +54,7 @@
 // console.log(updatedUserDetails);
 
 //nested obj
+//deep copy/clone-it will copy nested complete structure
 // const user = {
 //   name: "Alice",
 //   age: 32,
@@ -85,16 +87,17 @@
 //     c:3
 // };
 // const res=Object.assign(target,source);
-// const res=Object.assign({},target,source);//becoz to overcome target get updated in above method
+// const res=Object.assign({},target,source);// to overcome target reference we use {} empty tag
 // console.log(res);
 // console.log(target);
 // console.log(source);
 
 // Object.freeze()
 const user={
-    name:"Anija",
+    name:"Akhil",
     age:30
 };
  Object.freeze(user);
  user.name="Sarath";
+ user.age=23;
  console.log(user);

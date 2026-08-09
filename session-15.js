@@ -2,13 +2,13 @@
 //  let carName = "BMW";
 //  function carBrand(){
 //     console.log("THE BEST CAR FOR EVER",carName);
-    
+
 //  }
 //  carBrand();
 //  console.log(carName);
 // **************************************-------------------------------------**************************
 
-// function scope 
+// function scope
 // function cityName(){
 //     let ownCity = "malappuram"; //let and const is a block scope and var is global scope by default
 // console.log("City=",ownCity);
@@ -26,64 +26,56 @@
 // console.log(age);
 
 // **************************************-------------------------------------**************************
-//closure
+//closure -if we are acessing outerfn scope variablename for innerfn scope
 // let country ="india"
-// function outsideFn(){
+// function outerFn(){
 //     let state = "Kerala";
 //     function innerFn(){
 //         console.log("COUNTRY",country);
 //         console.log("STATE",state);
-        
+
 //     }
 //     innerFn()
 // }
-// outsideFn()
+// outerFn()
 
 // **************************************-------------------------------------**************************
 
-// function counder (){
-//     let count =0;
-//     return function (){
-//         count++; //count + 1
-//         console.log(count);
-        
-//     }
+// function counter() {
+//   let count = 0;
+//   return function () {
+//     count++; //count + 1
+//     console.log(count);
+//   };
 // }
-// const value = counder()
-// value()
-// value()
-// value()
-// value()
-// value()
-// value()
-// value()
-// value()
+// const value = counter();
+// value() //1
+// value() //2
+// value() //3
+// value() //4
+
 
 // function counder (){
 //     let count =0;
 //     return function (){
 //         count++; //count + 1
 //         console.log(count);
-        
 //     }
 // }
 // const value = counder()
 // const value1 = counder()
-// value()
-// value1()
-// value()
-// value1()
-// value()
-// value1()
-// value()
-// value1()
+// value() //1
+// value1() //1
+// value() //2
+// value1() //2
+
 // console.log(myVar);
 // var myVar=10;
 // console.log(myVar);
 
 // console.log(myVar);
 //  let myVar=10;//Temporal Dead Zone
-// 
+//
 // function checlAge(age){
 //     if(age>=18){
 //         var message = 'Adult';
@@ -94,10 +86,10 @@
 // good()
 // function good(){
 //     console.log("hello");
-    
+
 // }
 // good()
 // const good =()=>{
 //     console.log("hello");
-    
+
 // }

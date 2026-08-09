@@ -1,0 +1,6 @@
+.selected {
+  border: rgb(243, 7, 172) solid 5px;
+}
+.toggle {
+  display: none;
+}
