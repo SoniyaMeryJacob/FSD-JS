@@ -111,6 +111,16 @@
       cartManager.addItem(phone);
       cartManager.addItem(watch);
       cartManager.showCart();
+
+      const totalAmount = cartManager.getTotal.bind(cartManager);
+      console.log("Total Amount:", totalAmount());
+
+      function applyDiscount(discount, message) {
+        const disPrice = this.getTotal() - discount;
+        console.log(`${message}, Final amount:${disPrice}`);
+      }
+      applyDiscount.call(cartManager, 1000, "Festival offer!!!");
+      applyDiscount.apply(cartManager, [1000, "Festival offer!!!"]);
     </script>
   </body>
 </html>
